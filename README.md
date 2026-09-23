@@ -1,9 +1,7 @@
 # ByteMe — Industry 4.0 Smart Wood Pellet Factory
 
-🏆 2nd Place — RMIT Capstone Showcase (Sept 2026), plus two industry-sponsored awards
-🔗 Live showcase page: https://www.rmitvn-showcase.com/byteme
+<img width="3179" height="4494" alt="Image" src="https://github.com/user-attachments/assets/938c221a-5d48-4f03-b8b9-6f95a0403dfa" />
 
-![ByteMe Capstone Poster](docs/poster.png)
 
 Most industrial automation, even at small scale, ends up siloed: each station runs its own PLC, controls its own sensors and motors, and keeps its own data to itself. Nothing's actually broken — but nobody can see the whole line from one place, catch a problem early, or supervise it remotely. This project exists because that same gap shows up in engineering education too: PLCs, sensors, edge computing, and cloud platforms usually get taught as separate topics, so students rarely get the chance to wire them into one real, working system. Built around a physical wood-pellet production line, this is that system — three independently-capable PLC stations, unified under central supervision, extended to a SCADA layer and the cloud, with a safety response that can act back on the hardware. And critically: the machines keep running even if the cloud connection doesn't — the cloud adds visibility and supervision, it was never allowed to become something the factory depends on to function.
 
@@ -66,18 +64,13 @@ Every planned deliverable made it into the final build:
 
 Cloud-side performance targets were all met too — dashboard updates within seconds, alerts fired within seconds of a threshold breach, and the PLC auto-stop consistently triggered on critical conditions.
 
-## Honest Limitations
-
-This is a demonstrator, not a production plant, and it's worth saying so directly:
+## Limitations
 
 - Built to show the *architecture*, not to match full-scale throughput, energy use, or production efficiency.
 - Some sensors still need longer-duration calibration before their data is trustworthy for predictive maintenance.
 - Cloud monitoring depends on network connectivity — if it drops, local PLC control keeps running, but remote visibility doesn't.
 - The AI anomaly detection is a working prototype, not validated against real fault data at scale.
-
-## Where This Sits
-
-Commercial learning factories like Festo's CP Factory or SMC's SIF-400 do more, and do it at production-grade maturity — but at a cost and footprint that doesn't fit a student project. This sits in the gap between a simple PLC/conveyor demo and those commercial platforms: small enough to build in a semester, real enough to show the entire Industry 4.0 pathway end to end.
+- Basic robot arm movement control.
 
 ## Team — ByteMe
 
