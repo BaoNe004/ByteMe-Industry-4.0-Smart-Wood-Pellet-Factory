@@ -1,5 +1,7 @@
 # ByteMe — Industry 4.0 Smart Wood Pellet Factory
 
+Live showcase page: https://www.rmitvn-showcase.com/byteme
+
 ![Poster](Demo%20Pictures/Poster.png)
 
 Most industrial automation, even at small scale, ends up siloed: each station runs its own PLC, controls its own sensors and motors, and keeps its own data to itself. Nothing's actually broken — but nobody can see the whole line from one place, catch a problem early, or supervise it remotely. This project exists because that same gap shows up in engineering education too: PLCs, sensors, edge computing, and cloud platforms usually get taught as separate topics, so students rarely get the chance to wire them into one real, working system. Built around a physical wood-pellet production line, this is that system — three independently-capable PLC stations, unified under central supervision, extended to a SCADA layer and the cloud, with a safety response that can act back on the hardware. And critically: the machines keep running even if the cloud connection doesn't — the cloud adds visibility and supervision, it was never allowed to become something the factory depends on to function.
