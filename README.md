@@ -24,7 +24,7 @@ flowchart LR
         S3["Station 3<br/>S7-1200<br/>Pelletizing"]
         C["Central PLC<br/>S7-1500"]
         HMI["HMI Panel"]
-        SCADA["SCADA<br/>(plant-wide view)"]
+        SCADA["SCADA<br/>"]
         S1 <--> C
         S2 <--> C
         S3 <--> C
@@ -61,7 +61,7 @@ Every planned deliverable made it into the final build:
 | Edge/cloud connectivity | ✅ Achieved |
 | Remote dashboard + automated alerts | ✅ Achieved |
 
-Cloud-side performance targets were all met too — dashboard updates within seconds, alerts fired within seconds of a threshold breach, and the PLC auto-stop consistently triggered on critical conditions.
+Cloud-side performance targets were all met too — dashboard updates with less than a second, alerts fired within seconds of a threshold breach, and the PLC auto-stop consistently triggered on critical conditions.
 
 ## Limitations
 
@@ -70,15 +70,3 @@ Cloud-side performance targets were all met too — dashboard updates within sec
 - Cloud monitoring depends on network connectivity — if it drops, local PLC control keeps running, but remote visibility doesn't.
 - The AI anomaly detection is a working prototype, not validated against real fault data at scale.
 - Basic robot arm movement control.
-
-## Team — ByteMe
-
-| Member | Role |
-|---|---|
-| Nguyen Quoc Bao | PLC hardware integration, sensor scaling, GET/PUT communication, HMI interface |
-| Kim Jong Chul | IoT 2050 integration, Node-RED communication flow |
-| Le Minh Thai Hoa | Cloud architecture, 5 Lambda functions, AI anomaly detection, React dashboard |
-| Le Tan Loi | Factory mechanical design, robot arm control, button logic |
-| Suh Chang Bean | Research, documentation, hardware support |
-
-**Academic Supervisor:** Dr. Thanh Tran — RMIT SSET
